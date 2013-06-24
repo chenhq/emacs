@@ -18,6 +18,38 @@ Major mode for editing CoffeeScript.
 
 ;;;***
 
+;;;### (autoloads (cssh-mode cssh-dired-find-file cssh-regexp-host-start
+;;;;;;  cssh-term-remote-open cssh-turn-on-ibuffer-binding) "cssh/cssh"
+;;;;;;  "cssh/cssh.el" (20936 18702))
+;;; Generated autoloads from cssh/cssh.el
+
+(autoload 'cssh-turn-on-ibuffer-binding "cssh/cssh" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'cssh-term-remote-open "cssh/cssh" "\
+Prompt for a remote host to connect to, and open a term there.
+
+\(fn)" t nil)
+
+(autoload 'cssh-regexp-host-start "cssh/cssh" "\
+start ClusterSSH for all mathing hosts in  known_hosts
+
+\(fn &optional CSSH-BUFFER-NAME)" t nil)
+
+(autoload 'cssh-dired-find-file "cssh/cssh" "\
+In dired, have cssh connect to hosts in the `dsh' configuration file.
+
+\(fn)" t nil)
+
+(autoload 'cssh-mode "cssh/cssh" "\
+A major mode for controlling multiple terms at once.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (el-get-checksum el-get-make-recipes el-get-cd
 ;;;;;;  el-get-self-update el-get-update-all el-get-version) "el-get/el-get"
 ;;;;;;  "el-get/el-get.el" (20790 14975))
