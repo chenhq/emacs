@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (coffee-mode) "coffee-mode/coffee-mode" "coffee-mode/coffee-mode.el"
-;;;;;;  (20788 25587))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from coffee-mode/coffee-mode.el
 
 (autoload 'coffee-mode "coffee-mode/coffee-mode" "\
@@ -20,7 +20,7 @@ Major mode for editing CoffeeScript.
 
 ;;;### (autoloads (el-get-checksum el-get-make-recipes el-get-cd
 ;;;;;;  el-get-self-update el-get-update-all el-get-version) "el-get/el-get"
-;;;;;;  "el-get/el-get.el" (20788 25585))
+;;;;;;  "el-get/el-get.el" (20790 14975))
 ;;; Generated autoloads from el-get/el-get.el
 
 (autoload 'el-get-version "el-get/el-get" "\
@@ -57,7 +57,7 @@ Compute the checksum of the given package, and put it in the kill-ring
 ;;;***
 
 ;;;### (autoloads (el-get-list-packages) "el-get/el-get-list-packages"
-;;;;;;  "el-get/el-get-list-packages.el" (20788 25583))
+;;;;;;  "el-get/el-get-list-packages.el" (20790 14975))
 ;;; Generated autoloads from el-get/el-get-list-packages.el
 
 (autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
@@ -68,7 +68,7 @@ Display a list of packages.
 ;;;***
 
 ;;;### (autoloads (feature-mode) "feature-mode/feature-mode" "feature-mode/feature-mode.el"
-;;;;;;  (20788 25577))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from feature-mode/feature-mode.el
 
 (autoload 'feature-mode "feature-mode/feature-mode" "\
@@ -81,7 +81,7 @@ Major mode for editing plain text stories
 ;;;***
 
 ;;;### (autoloads (haml-mode) "haml-mode/haml-mode" "haml-mode/haml-mode.el"
-;;;;;;  (20788 25582))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from haml-mode/haml-mode.el
 
 (autoload 'haml-mode "haml-mode/haml-mode" "\
@@ -96,7 +96,7 @@ Major mode for editing Haml files.
 ;;;***
 
 ;;;### (autoloads (gfm-mode markdown-mode) "markdown-mode/markdown-mode"
-;;;;;;  "markdown-mode/markdown-mode.el" (20788 25582))
+;;;;;;  "markdown-mode/markdown-mode.el" (20790 14975))
 ;;; Generated autoloads from markdown-mode/markdown-mode.el
 
 (autoload 'markdown-mode "markdown-mode/markdown-mode" "\
@@ -113,7 +113,7 @@ Major mode for editing GitHub Flavored Markdown files.
 
 ;;;### (autoloads (htmlize-many-files-dired htmlize-many-files htmlize-file
 ;;;;;;  htmlize-region htmlize-buffer) "org-mode/contrib/lisp/htmlize"
-;;;;;;  "org-mode/contrib/lisp/htmlize.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/htmlize.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/htmlize.el
 
 (autoload 'htmlize-buffer "org-mode/contrib/lisp/htmlize" "\
@@ -179,7 +179,7 @@ HTMLize dired-marked files.
 ;;;***
 
 ;;;### (autoloads (org-contacts) "org-mode/contrib/lisp/org-contacts"
-;;;;;;  "org-mode/contrib/lisp/org-contacts.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-contacts.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-contacts.el
 
 (autoload 'org-contacts "org-mode/contrib/lisp/org-contacts" "\
@@ -191,7 +191,7 @@ Create agenda view for contacts matching NAME.
 
 ;;;### (autoloads (org-e-ascii-export-to-ascii org-e-ascii-export-as-ascii)
 ;;;;;;  "org-mode/contrib/lisp/org-e-ascii" "org-mode/contrib/lisp/org-e-ascii.el"
-;;;;;;  (20788 25582))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-e-ascii.el
 
 (autoload 'org-e-ascii-export-as-ascii "org-mode/contrib/lisp/org-e-ascii" "\
@@ -256,7 +256,7 @@ Return output file's name.
 ;;;### (autoloads (org-e-beamer-insert-options-template org-e-beamer-select-environment
 ;;;;;;  org-e-beamer-export-to-pdf org-e-beamer-export-to-latex org-e-beamer-export-as-latex
 ;;;;;;  org-e-beamer-mode) "org-mode/contrib/lisp/org-e-beamer" "org-mode/contrib/lisp/org-e-beamer.el"
-;;;;;;  (20788 25582))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-e-beamer.el
 
 (autoload 'org-e-beamer-mode "org-mode/contrib/lisp/org-e-beamer" "\
@@ -370,7 +370,7 @@ Insert a settings template, to make sure users do this right.
 
 ;;;### (autoloads (org-e-html-export-to-html org-e-html-export-as-html
 ;;;;;;  org-export-e-htmlize-generate-css) "org-mode/contrib/lisp/org-e-html"
-;;;;;;  "org-mode/contrib/lisp/org-e-html.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-e-html.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-e-html.el
 
 (put 'org-e-html-style-include-default 'safe-local-variable 'booleanp)
@@ -454,7 +454,7 @@ Return output file's name.
 
 ;;;### (autoloads (org-e-latex-export-to-pdf org-e-latex-export-to-latex
 ;;;;;;  org-e-latex-export-as-latex) "org-mode/contrib/lisp/org-e-latex"
-;;;;;;  "org-mode/contrib/lisp/org-e-latex.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-e-latex.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-e-latex.el
 
 (autoload 'org-e-latex-export-as-latex "org-mode/contrib/lisp/org-e-latex" "\
@@ -547,7 +547,7 @@ Return PDF file's name.
 
 ;;;### (autoloads (org-e-odt-convert org-e-odt-export-to-odt org-e-odt-export-as-odf-and-open
 ;;;;;;  org-e-odt-export-as-odf) "org-mode/contrib/lisp/org-e-odt"
-;;;;;;  "org-mode/contrib/lisp/org-e-odt.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-e-odt.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-e-odt.el
 
 (put 'org-e-odt-preferred-output-format 'safe-local-variable 'stringp)
@@ -613,7 +613,7 @@ using `org-open-file'.
 
 ;;;### (autoloads (org-e-publish-current-project org-e-publish-current-file
 ;;;;;;  org-e-publish-all org-e-publish) "org-mode/contrib/lisp/org-e-publish"
-;;;;;;  "org-mode/contrib/lisp/org-e-publish.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-e-publish.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-e-publish.el
 
 (defalias 'org-e-publish-project 'org-e-publish)
@@ -646,7 +646,7 @@ the project.
 ;;;***
 
 ;;;### (autoloads (org-export-dispatch) "org-mode/contrib/lisp/org-export"
-;;;;;;  "org-mode/contrib/lisp/org-export.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-export.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-export.el
 
 (autoload 'org-export-dispatch "org-mode/contrib/lisp/org-export" "\
@@ -665,7 +665,7 @@ Return an error if key pressed has no associated command.
 ;;;***
 
 ;;;### (autoloads (org-export-generic org-set-generic-type) "org-mode/contrib/lisp/org-export-generic"
-;;;;;;  "org-mode/contrib/lisp/org-export-generic.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-export-generic.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-export-generic.el
 
 (autoload 'org-set-generic-type "org-mode/contrib/lisp/org-export-generic" "\
@@ -686,7 +686,7 @@ underlined headlines.  The default is 3.
 
 ;;;### (autoloads (org-md-export-to-markdown org-md-export-as-markdown)
 ;;;;;;  "org-mode/contrib/lisp/org-md" "org-mode/contrib/lisp/org-md.el"
-;;;;;;  (20788 25582))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-md.el
 
 (autoload 'org-md-export-as-markdown "org-mode/contrib/lisp/org-md" "\
@@ -736,7 +736,7 @@ Return output file's name.
 
 ;;;### (autoloads (org-registry-update org-registry-insinuate org-registry-initialize
 ;;;;;;  org-registry-visit org-registry-show) "org-mode/contrib/lisp/org-registry"
-;;;;;;  "org-mode/contrib/lisp/org-registry.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-registry.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-registry.el
 
 (autoload 'org-registry-show "org-mode/contrib/lisp/org-registry" "\
@@ -774,7 +774,7 @@ Update the registry for the current Org file.
 ;;;***
 
 ;;;### (autoloads (org-toc-show) "org-mode/contrib/lisp/org-toc"
-;;;;;;  "org-mode/contrib/lisp/org-toc.el" (20788 25582))
+;;;;;;  "org-mode/contrib/lisp/org-toc.el" (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-toc.el
 
 (autoload 'org-toc-show "org-mode/contrib/lisp/org-toc" "\
@@ -786,7 +786,7 @@ Show the table of contents of the current Org-mode buffer.
 
 ;;;### (autoloads (org-track-compile-org org-track-fetch-package)
 ;;;;;;  "org-mode/contrib/lisp/org-track" "org-mode/contrib/lisp/org-track.el"
-;;;;;;  (20788 25582))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org-track.el
 
 (autoload 'org-track-fetch-package "org-mode/contrib/lisp/org-track" "\
@@ -809,7 +809,7 @@ DIRECTORY is where the directory org-mode/ lives (i.e. the
 
 ;;;### (autoloads (org2rem-combine-agenda-files org2rem-all-agenda-files
 ;;;;;;  org2rem-this-file) "org-mode/contrib/lisp/org2rem" "org-mode/contrib/lisp/org2rem.el"
-;;;;;;  (20788 25582))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/contrib/lisp/org2rem.el
 
 (autoload 'org2rem-this-file "org-mode/contrib/lisp/org2rem" "\
@@ -846,7 +846,7 @@ The file is stored under the name `org-combined-agenda-remind-file'.
 ;;;;;;  org-babel-pop-to-session-maybe org-babel-load-in-session-maybe
 ;;;;;;  org-babel-expand-src-block-maybe org-babel-view-src-block-info
 ;;;;;;  org-babel-execute-maybe org-babel-execute-safely-maybe) "org-mode/lisp/ob"
-;;;;;;  "org-mode/lisp/ob.el" (20788 25581))
+;;;;;;  "org-mode/lisp/ob.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/ob.el
 
 (autoload 'org-babel-execute-safely-maybe "org-mode/lisp/ob" "\
@@ -1069,7 +1069,7 @@ Mark current src block.
 ;;;***
 
 ;;;### (autoloads (org-babel-describe-bindings) "org-mode/lisp/ob-keys"
-;;;;;;  "org-mode/lisp/ob-keys.el" (20788 25581))
+;;;;;;  "org-mode/lisp/ob-keys.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/ob-keys.el
 
 (autoload 'org-babel-describe-bindings "org-mode/lisp/ob-keys" "\
@@ -1081,7 +1081,7 @@ Describe all keybindings behind `org-babel-key-prefix'.
 
 ;;;### (autoloads (org-babel-lob-get-info org-babel-lob-execute-maybe
 ;;;;;;  org-babel-lob-ingest) "org-mode/lisp/ob-lob" "org-mode/lisp/ob-lob.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/ob-lob.el
 
 (autoload 'org-babel-lob-ingest "org-mode/lisp/ob-lob" "\
@@ -1106,7 +1106,7 @@ Return a Library of Babel function call as a string.
 
 ;;;### (autoloads (org-babel-tangle org-babel-tangle-file org-babel-load-file
 ;;;;;;  org-babel-tangle-lang-exts) "org-mode/lisp/ob-tangle" "org-mode/lisp/ob-tangle.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/ob-tangle.el
 
 (defvar org-babel-tangle-lang-exts '(("emacs-lisp" . "el")) "\
@@ -1156,7 +1156,7 @@ exported source code blocks by language.
 ;;;;;;  org-store-link org-run-like-in-org-mode turn-on-orgstruct++
 ;;;;;;  turn-on-orgstruct orgstruct-mode org-global-cycle org-mode
 ;;;;;;  org-version org-babel-do-load-languages) "org-mode/lisp/org"
-;;;;;;  "org-mode/lisp/org.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org.el
 
 (autoload 'org-babel-do-load-languages "org-mode/lisp/org" "\
@@ -1454,7 +1454,7 @@ modified.
 ;;;;;;  org-search-view org-agenda-list org-batch-store-agenda-views
 ;;;;;;  org-store-agenda-views org-batch-agenda-csv org-batch-agenda
 ;;;;;;  org-agenda org-toggle-sticky-agenda) "org-mode/lisp/org-agenda"
-;;;;;;  "org-mode/lisp/org-agenda.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-agenda.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-agenda.el
 
 (autoload 'org-toggle-sticky-agenda "org-mode/lisp/org-agenda" "\
@@ -1717,7 +1717,7 @@ to override `appt-message-warning-time'.
 
 ;;;### (autoloads (org-archive-subtree-default-with-confirmation
 ;;;;;;  org-archive-subtree-default) "org-mode/lisp/org-archive"
-;;;;;;  "org-mode/lisp/org-archive.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-archive.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-archive.el
 
 (autoload 'org-archive-subtree-default "org-mode/lisp/org-archive" "\
@@ -1738,7 +1738,7 @@ This command is set with the variable `org-archive-default-command'.
 ;;;;;;  org-replace-region-by-ascii org-export-as-ascii-to-buffer
 ;;;;;;  org-export-as-utf8-to-buffer org-export-as-utf8 org-export-as-latin1-to-buffer
 ;;;;;;  org-export-as-latin1) "org-mode/lisp/org-ascii" "org-mode/lisp/org-ascii.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-ascii.el
 
 (autoload 'org-export-as-latin1 "org-mode/lisp/org-ascii" "\
@@ -1812,7 +1812,7 @@ publishing directory.
 ;;;***
 
 ;;;### (autoloads (org-attach) "org-mode/lisp/org-attach" "org-mode/lisp/org-attach.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-attach.el
 
 (autoload 'org-attach "org-mode/lisp/org-attach" "\
@@ -1824,7 +1824,7 @@ Shows a list of commands and prompts for another key to execute a command.
 ;;;***
 
 ;;;### (autoloads (org-bbdb-anniversaries) "org-mode/lisp/org-bbdb"
-;;;;;;  "org-mode/lisp/org-bbdb.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-bbdb.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-bbdb.el
 
 (autoload 'org-bbdb-anniversaries "org-mode/lisp/org-bbdb" "\
@@ -1836,7 +1836,7 @@ Extract anniversaries from BBDB for display in the agenda.
 
 ;;;### (autoloads (org-capture-import-remember-templates org-capture-insert-template-here
 ;;;;;;  org-capture) "org-mode/lisp/org-capture" "org-mode/lisp/org-capture.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-capture.el
 
 (defvar org-capture-initial nil)
@@ -1880,7 +1880,7 @@ Set org-capture-templates to be similar to `org-remember-templates'.
 
 ;;;### (autoloads (org-clock-persistence-insinuate org-get-clocktable
 ;;;;;;  org-clock-in-last) "org-mode/lisp/org-clock" "org-mode/lisp/org-clock.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-clock.el
 
 (autoload 'org-clock-in-last "org-mode/lisp/org-clock" "\
@@ -1911,7 +1911,7 @@ Set up hooks for clock persistence.
 ;;;***
 
 ;;;### (autoloads (org-check-version) "org-mode/lisp/org-compat"
-;;;;;;  "org-mode/lisp/org-compat.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-compat.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-compat.el
 
 (autoload 'org-check-version "org-mode/lisp/org-compat" "\
@@ -1922,7 +1922,7 @@ Try very hard to provide sensible version strings.
 ;;;***
 
 ;;;### (autoloads (org-datetree-find-date-create) "org-mode/lisp/org-datetree"
-;;;;;;  "org-mode/lisp/org-datetree.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-datetree.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-datetree.el
 
 (autoload 'org-datetree-find-date-create "org-mode/lisp/org-datetree" "\
@@ -1939,7 +1939,7 @@ tree can be found.
 ;;;;;;  org-export-as-docbook-pdf org-export-region-as-docbook org-replace-region-by-docbook
 ;;;;;;  org-export-as-docbook-to-buffer org-export-as-docbook-batch)
 ;;;;;;  "org-mode/lisp/org-docbook" "org-mode/lisp/org-docbook.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-docbook.el
 
 (autoload 'org-export-as-docbook-batch "org-mode/lisp/org-docbook" "\
@@ -2016,7 +2016,7 @@ publishing directory.
 
 ;;;### (autoloads (org-element-context org-element-at-point org-element-interpret-data)
 ;;;;;;  "org-mode/lisp/org-element" "org-mode/lisp/org-element.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-element.el
 
 (autoload 'org-element-interpret-data "org-mode/lisp/org-element" "\
@@ -2075,7 +2075,7 @@ and :post-blank properties.
 
 ;;;### (autoloads (org-insert-export-options-template org-export-as-org
 ;;;;;;  org-export-visible org-export) "org-mode/lisp/org-exp" "org-mode/lisp/org-exp.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-exp.el
 
 (autoload 'org-export "org-mode/lisp/org-exp" "\
@@ -2137,7 +2137,7 @@ Insert into the buffer a template with information for exporting.
 
 ;;;### (autoloads (org-feed-show-raw-feed org-feed-goto-inbox org-feed-update
 ;;;;;;  org-feed-update-all) "org-mode/lisp/org-feed" "org-mode/lisp/org-feed.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-feed.el
 
 (autoload 'org-feed-update-all "org-mode/lisp/org-feed" "\
@@ -2165,7 +2165,7 @@ Show the raw feed buffer of a feed.
 ;;;***
 
 ;;;### (autoloads (org-footnote-normalize org-footnote-action) "org-mode/lisp/org-footnote"
-;;;;;;  "org-mode/lisp/org-footnote.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-footnote.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-footnote.el
 
 (autoload 'org-footnote-action "org-mode/lisp/org-footnote" "\
@@ -2216,7 +2216,7 @@ Additional note on `org-footnote-insert-pos-for-preprocessor':
 ;;;### (autoloads (org-freemind-to-org-mode org-freemind-from-org-sparse-tree
 ;;;;;;  org-freemind-from-org-mode org-freemind-from-org-mode-node
 ;;;;;;  org-freemind-show org-export-as-freemind) "org-mode/lisp/org-freemind"
-;;;;;;  "org-mode/lisp/org-freemind.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-freemind.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-freemind.el
 
 (autoload 'org-export-as-freemind "org-mode/lisp/org-freemind" "\
@@ -2277,7 +2277,7 @@ Convert FreeMind file MM-FILE to `org-mode' file ORG-FILE.
 ;;;### (autoloads (org-export-htmlize-generate-css org-export-as-html
 ;;;;;;  org-export-region-as-html org-replace-region-by-html org-export-as-html-to-buffer
 ;;;;;;  org-export-as-html-batch org-export-as-html-and-open) "org-mode/lisp/org-html"
-;;;;;;  "org-mode/lisp/org-html.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-html.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-html.el
 
 (put 'org-export-html-style-include-default 'safe-local-variable 'booleanp)
@@ -2371,7 +2371,7 @@ that uses these same face definitions.
 
 ;;;### (autoloads (org-export-icalendar-combine-agenda-files org-export-icalendar-all-agenda-files
 ;;;;;;  org-export-icalendar-this-file) "org-mode/lisp/org-icalendar"
-;;;;;;  "org-mode/lisp/org-icalendar.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-icalendar.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-icalendar.el
 
 (autoload 'org-export-icalendar-this-file "org-mode/lisp/org-icalendar" "\
@@ -2399,7 +2399,7 @@ The file is stored under the name `org-combined-agenda-icalendar-file'.
 ;;;### (autoloads (org-id-store-link org-id-find-id-file org-id-find
 ;;;;;;  org-id-goto org-id-get-with-outline-drilling org-id-get-with-outline-path-completion
 ;;;;;;  org-id-get org-id-copy org-id-get-create) "org-mode/lisp/org-id"
-;;;;;;  "org-mode/lisp/org-id.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-id.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-id.el
 
 (autoload 'org-id-get-create "org-mode/lisp/org-id" "\
@@ -2468,7 +2468,7 @@ Store a link to the current entry, using its ID.
 ;;;***
 
 ;;;### (autoloads (org-indent-mode) "org-mode/lisp/org-indent" "org-mode/lisp/org-indent.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-indent.el
 
 (autoload 'org-indent-mode "org-mode/lisp/org-indent" "\
@@ -2486,7 +2486,7 @@ during idle time.
 ;;;***
 
 ;;;### (autoloads (org-irc-store-link) "org-mode/lisp/org-irc" "org-mode/lisp/org-irc.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-irc.el
 
 (autoload 'org-irc-store-link "org-mode/lisp/org-irc" "\
@@ -2499,7 +2499,7 @@ Dispatch to the appropriate function to store a link to an IRC session.
 ;;;### (autoloads (org-export-as-pdf-and-open org-export-as-pdf org-export-as-latex
 ;;;;;;  org-export-region-as-latex org-replace-region-by-latex org-export-as-latex-to-buffer
 ;;;;;;  org-export-as-latex-batch) "org-mode/lisp/org-latex" "org-mode/lisp/org-latex.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-latex.el
 
 (autoload 'org-export-as-latex-batch "org-mode/lisp/org-latex" "\
@@ -2580,7 +2580,7 @@ Export as LaTeX, then process through to PDF, and open.
 
 ;;;### (autoloads (org-lparse-region org-replace-region-by org-lparse-to-buffer
 ;;;;;;  org-lparse-batch org-lparse-and-open) "org-mode/lisp/org-lparse"
-;;;;;;  "org-mode/lisp/org-lparse.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-lparse.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-lparse.el
 
 (autoload 'org-lparse-and-open "org-mode/lisp/org-lparse" "\
@@ -2638,7 +2638,7 @@ in a window.  A non-interactive call will only return the buffer.
 
 ;;;### (autoloads (org-mobile-create-sumo-agenda org-mobile-pull
 ;;;;;;  org-mobile-push) "org-mode/lisp/org-mobile" "org-mode/lisp/org-mobile.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-mobile.el
 
 (autoload 'org-mobile-push "org-mode/lisp/org-mobile" "\
@@ -2664,8 +2664,8 @@ Create a file that contains all custom agenda views.
 
 ;;;### (autoloads (org-export-as-odf-and-open org-export-as-odf org-export-odt-convert
 ;;;;;;  org-export-as-odt org-export-as-odt-batch org-export-as-odt-and-open)
-;;;;;;  "org-mode/lisp/org-odt" "org-mode/lisp/org-odt.el" (20788
-;;;;;;  25581))
+;;;;;;  "org-mode/lisp/org-odt" "org-mode/lisp/org-odt.el" (20790
+;;;;;;  14975))
 ;;; Generated autoloads from org-mode/lisp/org-odt.el
 
 (put 'org-export-odt-preferred-output-format 'safe-local-variable 'stringp)
@@ -2737,7 +2737,7 @@ formula file.
 ;;;***
 
 ;;;### (autoloads (org-plot/gnuplot) "org-mode/lisp/org-plot" "org-mode/lisp/org-plot.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-plot.el
 
 (autoload 'org-plot/gnuplot "org-mode/lisp/org-plot" "\
@@ -2751,7 +2751,7 @@ line directly before or after the table.
 
 ;;;### (autoloads (org-publish-current-project org-publish-current-file
 ;;;;;;  org-publish-all org-publish) "org-mode/lisp/org-publish"
-;;;;;;  "org-mode/lisp/org-publish.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-publish.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-publish.el
 
 (defalias 'org-publish-project 'org-publish)
@@ -2785,7 +2785,7 @@ the project.
 
 ;;;### (autoloads (org-remember-handler org-remember org-remember-apply-template
 ;;;;;;  org-remember-annotation org-remember-insinuate) "org-mode/lisp/org-remember"
-;;;;;;  "org-mode/lisp/org-remember.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-remember.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-remember.el
 
 (autoload 'org-remember-insinuate "org-mode/lisp/org-remember" "\
@@ -2862,7 +2862,7 @@ See also the variable `org-reverse-note-order'.
 
 ;;;### (autoloads (org-table-to-lisp orgtbl-mode turn-on-orgtbl org-table-iterate-buffer-tables
 ;;;;;;  org-table-recalculate-buffer-tables) "org-mode/lisp/org-table"
-;;;;;;  "org-mode/lisp/org-table.el" (20788 25581))
+;;;;;;  "org-mode/lisp/org-table.el" (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-table.el
 
 (autoload 'org-table-recalculate-buffer-tables "org-mode/lisp/org-table" "\
@@ -2897,7 +2897,7 @@ The table is taken from the parameter TXT, or from the buffer at point.
 
 ;;;### (autoloads (org-export-as-taskjuggler-and-open org-export-as-taskjuggler)
 ;;;;;;  "org-mode/lisp/org-taskjuggler" "org-mode/lisp/org-taskjuggler.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-taskjuggler.el
 
 (autoload 'org-export-as-taskjuggler "org-mode/lisp/org-taskjuggler" "\
@@ -2925,8 +2925,8 @@ with the TaskJuggler GUI.
 
 ;;;### (autoloads (org-timer-set-timer org-timer-item org-timer-change-times-in-region
 ;;;;;;  org-timer org-timer-stop org-timer-pause-or-continue org-timer-start)
-;;;;;;  "org-mode/lisp/org-timer" "org-mode/lisp/org-timer.el" (20788
-;;;;;;  25581))
+;;;;;;  "org-mode/lisp/org-timer" "org-mode/lisp/org-timer.el" (20790
+;;;;;;  14975))
 ;;; Generated autoloads from org-mode/lisp/org-timer.el
 
 (autoload 'org-timer-start "org-mode/lisp/org-timer" "\
@@ -2997,29 +2997,8 @@ replace any running timer.
 
 ;;;***
 
-;;;### (autoloads (org-git-version org-release) "org-mode/lisp/org-version"
-;;;;;;  "org-mode/lisp/org-version.el" (20788 25581))
-;;; Generated autoloads from org-mode/lisp/org-version.el
-
-(autoload 'org-release "org-mode/lisp/org-version" "\
-The release version of org-mode.
-  Inserted by installing org-mode or when a release is made.
-
-\(fn)" nil nil)
-
-(autoload 'org-git-version "org-mode/lisp/org-version" "\
-The Git version of org-mode.
-  Inserted by installing org-mode or when a release is made.
-
-\(fn)" nil nil)
-
-(defconst org-odt-data-dir "/usr/share/emacs/etc/org" "\
-The location of ODT styles.")
-
-;;;***
-
 ;;;### (autoloads (org-export-as-xoxo) "org-mode/lisp/org-xoxo" "org-mode/lisp/org-xoxo.el"
-;;;;;;  (20788 25581))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from org-mode/lisp/org-xoxo.el
 
 (autoload 'org-export-as-xoxo "org-mode/lisp/org-xoxo" "\
@@ -3030,63 +3009,8 @@ The XOXO buffer is named *xoxo-<source buffer name>*
 
 ;;;***
 
-;;;### (autoloads (pymacs-apply pymacs-call pymacs-exec pymacs-eval
-;;;;;;  pymacs-autoload pymacs-load) "pymacs/pymacs" "pymacs/pymacs.el"
-;;;;;;  (20788 25585))
-;;; Generated autoloads from pymacs/pymacs.el
-
-(autoload 'pymacs-load "pymacs/pymacs" "\
-Import the Python module named MODULE into Emacs.
-Each function in the Python module is made available as an Emacs function.
-The Lisp name of each function is the concatenation of PREFIX with
-the Python name, in which underlines are replaced by dashes.  If PREFIX is
-not given, it defaults to MODULE followed by a dash.
-If NOERROR is not nil, do not raise error when the module is not found.
-
-\(fn MODULE &optional PREFIX NOERROR)" t nil)
-
-(autoload 'pymacs-autoload "pymacs/pymacs" "\
-Pymacs's equivalent of the standard emacs facility `autoload'.
-Define FUNCTION to autoload from Python MODULE using PREFIX.
-If PREFIX is not given, it defaults to MODULE followed by a dash.
-Optional DOCSTRING documents FUNCTION until it gets loaded.
-INTERACTIVE is normally the argument to the function `interactive',
-t means `interactive' without arguments, nil means not interactive,
-which is the default.
-
-\(fn FUNCTION MODULE &optional PREFIX DOCSTRING INTERACTIVE)" nil nil)
-
-(autoload 'pymacs-eval "pymacs/pymacs" "\
-Compile TEXT as a Python expression, and return its value.
-
-\(fn TEXT)" t nil)
-
-(autoload 'pymacs-exec "pymacs/pymacs" "\
-Compile and execute TEXT as a sequence of Python statements.
-This functionality is experimental, and does not appear to be useful.
-
-\(fn TEXT)" t nil)
-
-(autoload 'pymacs-call "pymacs/pymacs" "\
-Return the result of calling a Python function FUNCTION over ARGUMENTS.
-FUNCTION is a string denoting the Python function, ARGUMENTS are separate
-Lisp expressions, one per argument.  Immutable Lisp constants are converted
-to Python equivalents, other structures are converted into Lisp handles.
-
-\(fn FUNCTION &rest ARGUMENTS)" nil nil)
-
-(autoload 'pymacs-apply "pymacs/pymacs" "\
-Return the result of calling a Python function FUNCTION over ARGUMENTS.
-FUNCTION is a string denoting the Python function, ARGUMENTS is a list of
-Lisp expressions.  Immutable Lisp constants are converted to Python
-equivalents, other structures are converted into Lisp handles.
-
-\(fn FUNCTION ARGUMENTS)" nil nil)
-
-;;;***
-
 ;;;### (autoloads (rspec-buffer-is-spec-p rspec-mode) "rspec-mode/rspec-mode"
-;;;;;;  "rspec-mode/rspec-mode.el" (20788 25582))
+;;;;;;  "rspec-mode/rspec-mode.el" (20790 14975))
 ;;; Generated autoloads from rspec-mode/rspec-mode.el
 
 (autoload 'rspec-mode "rspec-mode/rspec-mode" "\
@@ -3108,7 +3032,7 @@ Returns true if the current buffer is a spec
 ;;;***
 
 ;;;### (autoloads (rvm-open-gem rvm-use rvm-activate-corresponding-ruby
-;;;;;;  rvm-use-default) "rvm/rvm" "rvm/rvm.el" (20788 25582))
+;;;;;;  rvm-use-default) "rvm/rvm" "rvm/rvm.el" (20790 14975))
 ;;; Generated autoloads from rvm/rvm.el
 
 (autoload 'rvm-use-default "rvm/rvm" "\
@@ -3136,7 +3060,7 @@ switch the current ruby version to any ruby, which is installed with rvm
 ;;;***
 
 ;;;### (autoloads (sass-mode) "sass-mode/sass-mode" "sass-mode/sass-mode.el"
-;;;;;;  (20788 25586))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from sass-mode/sass-mode.el
 
 (autoload 'sass-mode "sass-mode/sass-mode" "\
@@ -3149,7 +3073,7 @@ Major mode for editing Sass files.
 ;;;***
 
 ;;;### (autoloads (yaml-mode yaml) "yaml-mode/yaml-mode" "yaml-mode/yaml-mode.el"
-;;;;;;  (20788 25582))
+;;;;;;  (20790 14975))
 ;;; Generated autoloads from yaml-mode/yaml-mode.el
 
 (let ((loads (get 'yaml 'custom-loads))) (if (member '"yaml-mode/yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"yaml-mode/yaml-mode" loads))))
@@ -3162,12 +3086,6 @@ Simple mode to edit YAML.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.ya?ml$" . yaml-mode))
-
-;;;***
-
-;;;### (autoloads nil nil ("ibus/ibus.el" "smartrep/smartrep.el"
-;;;;;;  "unicad/unicad.el" "windresize-extension/windresize-extension.el")
-;;;;;;  (20789 43230 536487))
 
 ;;;***
 

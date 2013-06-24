@@ -60,19 +60,8 @@
 		  :load-path
 		  ("." "lisp" "contrib/lisp")
 		  :autoloads nil :features org-install))
- (pycomplete+ status "installed" recipe
-	      (:name pycomplete+ :auto-generated t :type emacswiki :description "complete symbols at point using Pymacs" :website "https://raw.github.com/emacsmirror/emacswiki.org/master/pycomplete+.el"))
- (pymacs status "installed" recipe
-	 (:name pymacs :description "Interface between Emacs Lisp and Python" :type github :pkgname "pinard/Pymacs" :prepare
-		(progn
-		  (el-get-envpath-prepend "PYTHONPATH" default-directory)
-		  (autoload 'pymacs-load "pymacs" nil t)
-		  (autoload 'pymacs-eval "pymacs" nil t)
-		  (autoload 'pymacs-exec "pymacs" nil t)
-		  (autoload 'pymacs-call "pymacs")
-		  (autoload 'pymacs-apply "pymacs"))
-		:build
-		("make")))
+ (pycomplete+ status "removed" recipe nil)
+ (pymacs status "removed" recipe nil)
  (python-mode status "installed" recipe
 	      (:type github :username "emacsmirror" :name python-mode :type emacsmirror :description "Major mode for editing Python programs" :features
 		     (python-mode doctest-mode)
@@ -83,8 +72,7 @@
 				    '("\\.py$" . python-mode))
 		       (add-to-list 'interpreter-mode-alist
 				    '("python" . python-mode)))))
- (redo+ status "installed" recipe
-	(:name redo+ :auto-generated t :type emacswiki :description "Redo/undo system for Emacs" :website "https://raw.github.com/emacsmirror/emacswiki.org/master/redo+.el"))
+ (redo+ status "removed" recipe nil)
  (rinari status "removed" recipe nil)
  (rope status "installed" recipe
        (:name rope :description "A python refactoring library" :post-init
@@ -119,10 +107,8 @@
 				'("\\.scss$" . sass-mode))))
  (smartrep status "installed" recipe
 	   (:name smartrep :description "Support sequential operation which omitted prefix keys." :website "http://sheephead.homelinux.org/2011/12/19/6930/" :type github :pkgname "myuhe/smartrep.el" :features "smartrep"))
- (unicad status "installed" recipe
-	 (:name unicad :auto-generated t :type emacswiki :description "an elisp port of Mozilla Universal Charset Auto Detector" :website "https://raw.github.com/emacsmirror/emacswiki.org/master/unicad.el"))
- (windresize-extension status "installed" recipe
-		       (:name windresize-extension :auto-generated t :type emacswiki :description "Some extension functions for `windresize.el'" :website "https://raw.github.com/emacsmirror/emacswiki.org/master/windresize-extension.el"))
+ (unicad status "removed" recipe nil)
+ (windresize-extension status "removed" recipe nil)
  (xcscope status "installed" recipe
 	  (:name xcscope :description "Cscope interface for (X)Emacs" :type github :pkgname "To1ne/xcscope" :features xcscope))
  (yaml-mode status "installed" recipe

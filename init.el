@@ -1,3 +1,8 @@
+;; unicad
+(add-to-list 'load-path
+	     "~/.emacs.d/plugins/unicad")
+(require 'unicad)
+
 
 ;; =============================
 ;; autocomplete and yasnippet
@@ -131,24 +136,25 @@
 
  
 ;; redo+
-(require 'redo+)
-(global-set-key (kbd "C-?") 'redo)
+;; can not find in el-get, WHY???
+;;(require 'redo+)
+;;(global-set-key (kbd "C-?") 'redo)
 
 
 ;; ess
 (add-to-list 'load-path "~/.emacs.d/plugins/ess/lisp")
 (require 'ess-site)
 
-
+;; can not find pymacs, so disable id. WHY?
 ;; python
-(require 'pymacs)
-  (pymacs-load "ropemacs" "rope-")
-(setq ropemacs-enable-shortcuts nil)
-  (setq ropemacs-local-prefix "C-c C-p")
-(ac-ropemacs-initialize)
-(add-hook 'python-mode-hook
-      (lambda ()
-    (add-to-list 'ac-sources 'ac-source-ropemacs)))
+;; (require 'pymacs)
+;;   (pymacs-load "ropemacs" "rope-")
+;; (setq ropemacs-enable-shortcuts nil)
+;;   (setq ropemacs-local-prefix "C-c C-p")
+;; (ac-ropemacs-initialize)
+;; (add-hook 'python-mode-hook
+;;       (lambda ()
+;;     (add-to-list 'ac-sources 'ac-source-ropemacs)))
 
 ;; ===========================================
 ;; 输入法
@@ -172,7 +178,8 @@
 ;; ================================
 ;; 窗口管理
 ;; ================================
-
+(add-to-list 'load-path
+	     "~/.emacs.d/plugins/windresize-extension")
 ;; 使用windmove来移动窗口
 ;; 比如：
 ;;    S-<up>、S-<right>跳转到上面、右边的窗口
@@ -187,6 +194,7 @@
 ;;
 ;; 定义调节窗口的快捷键
 ;;
+
 (define-prefix-command 'my-Cz-map)
 (global-set-key (kbd "C-z") 'my-Cz-map)
 (smartrep-define-key
