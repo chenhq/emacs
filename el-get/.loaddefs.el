@@ -18,9 +18,40 @@ Major mode for editing CoffeeScript.
 
 ;;;***
 
+;;;### (autoloads (color-theme-solarized-light color-theme-solarized-dark
+;;;;;;  color-theme-solarized) "color-theme-solarized/color-theme-solarized"
+;;;;;;  "color-theme-solarized/color-theme-solarized.el" (20938 16608))
+;;; Generated autoloads from color-theme-solarized/color-theme-solarized.el
+
+(autoload 'color-theme-solarized "color-theme-solarized/color-theme-solarized" "\
+Color theme by Ethan Schoonover, created 2011-03-24.
+Ported to Emacs by Greg Pfeil, http://ethanschoonover.com/solarized.
+
+\(fn MODE)" t nil)
+
+(autoload 'color-theme-solarized-dark "color-theme-solarized/color-theme-solarized" "\
+
+
+\(fn)" t nil)
+
+(autoload 'color-theme-solarized-light "color-theme-solarized/color-theme-solarized" "\
+
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "color-theme-solarized/solarized-definitions"
+;;;;;;  "color-theme-solarized/solarized-definitions.el" (20938 16608))
+;;; Generated autoloads from color-theme-solarized/solarized-definitions.el
+
+(when (boundp 'custom-theme-load-path) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
+
+;;;***
+
 ;;;### (autoloads (cssh-mode cssh-dired-find-file cssh-regexp-host-start
 ;;;;;;  cssh-term-remote-open cssh-turn-on-ibuffer-binding) "cssh/cssh"
-;;;;;;  "cssh/cssh.el" (20936 18702))
+;;;;;;  "cssh/cssh.el" (20938 16023))
 ;;; Generated autoloads from cssh/cssh.el
 
 (autoload 'cssh-turn-on-ibuffer-binding "cssh/cssh" "\
@@ -128,7 +159,7 @@ Major mode for editing Haml files.
 ;;;***
 
 ;;;### (autoloads (gfm-mode markdown-mode) "markdown-mode/markdown-mode"
-;;;;;;  "markdown-mode/markdown-mode.el" (20790 14975))
+;;;;;;  "markdown-mode/markdown-mode.el" (20901 46917))
 ;;; Generated autoloads from markdown-mode/markdown-mode.el
 
 (autoload 'markdown-mode "markdown-mode/markdown-mode" "\
@@ -3118,6 +3149,12 @@ Simple mode to edit YAML.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.ya?ml$" . yaml-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("color-theme-solarized/color-theme-solarized-pkg.el"
+;;;;;;  "color-theme-solarized/solarized-dark-theme.el" "color-theme-solarized/solarized-light-theme.el")
+;;;;;;  (20938 16608 949655))
 
 ;;;***
 
