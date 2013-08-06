@@ -64,7 +64,6 @@
 ;; =============================
 ;; others
 ;; =============================
-(require 'unicad)
 
 (require 'ido)
 (ido-mode t)
@@ -73,6 +72,40 @@
 (setq stack-trace-on-error t)
 (setq ecb-layout-name 'left3)
 ;; (ecb-activate)
+
+;; =============================
+;; eclim
+;; =============================
+(add-to-list 'load-path "~/.emacs.d/plugins/emacs-eclim/")
+(require 'eclim)
+(setq eclim-auto-save t)
+(global-eclim-mode)
+
+(custom-set-variables
+ '(eclim-eclipse-dirs '("/opt/eclipse")))
+(setq eclim-executable "/opt/eclipse/eclim") 
+;;Displaying compilation error messages in the echo area
+
+(setq help-at-pt-display-when-idle t)
+(setq help-at-pt-timer-delay 0.1)
+(help-at-pt-set-timer)
+
+;; Configuring auto-complete-mode
+;; regular auto-complete initialization
+(require 'auto-complete-config)
+(ac-config-default)
+
+;; add the emacs-eclim source
+(require 'ac-emacs-eclim-source)
+(ac-emacs-eclim-config)
+
+;; ;; Configuring company-mode
+;; (require 'company)
+;; (require 'company-emacs-eclim)
+;; (company-emacs-eclim-setup)
+;; (global-company-mode t)
+
+
 
 ;; =============================
 ;; Ruby and Rails
