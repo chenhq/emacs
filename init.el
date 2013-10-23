@@ -50,6 +50,15 @@
 
 (el-get 'sync)
 
+
+;; =====================
+;; markdown
+;; =====================
+
+;; (define-key map (kbd "C-M-n") 'outline-next-visible-heading)
+;; (define-key map (kbd "C-M-p") 'outline-previous-visible-heading)
+
+
 ;; =====================
 ;; 支持连续的non-prefix键
 ;; =====================
@@ -189,24 +198,33 @@
 ;;       (lambda ()
 ;;     (add-to-list 'ac-sources 'ac-source-ropemacs)))
 
-;; ===========================================
-;; 输入法
-;; 使用ibus来作为输入法，这样就可以使用google拼音
-;; F12开启 F11关闭
-;; ============================================
-(require 'ibus)
-;; Turn on ibus-mode automatically after loading .emacs
-(add-hook 'after-init-hook 'ibus-mode-on)
-;; Use C-SPC for Set Mark command
-(ibus-define-common-key ?\C-\s nil)
-;; Use C-/ for Undo command
-(ibus-define-common-key ?\C-/ nil)
-;; Change cursor color depending on IBus status
-;; (setq ibus-cursor-color '("red" "blue" "limegreen"))
-(global-set-key [f12] 'ibus-enable)
-(global-set-key [f11] 'ibus-disable)
+;; ;; ===========================================
+;; ;; 输入法
+;; ;; 使用ibus来作为输入法，这样就可以使用google拼音
+;; ;; F12开启 F11关闭
+;; ;; ============================================
+;; (require 'ibus)
+;; ;; Turn on ibus-mode automatically after loading .emacs
+;; (add-hook 'after-init-hook 'ibus-mode-on)
+;; ;; Use C-SPC for Set Mark command
+;; (ibus-define-common-key ?\C-\s nil)
+;; ;; Use C-/ for Undo command
+;; (ibus-define-common-key ?\C-/ nil)
+;; ;; Change cursor color depending on IBus status
+;; ;; (setq ibus-cursor-color '("red" "blue" "limegreen"))
+;; (global-set-key [f12] 'ibus-enable)
+;; (global-set-key [f11] 'ibus-disable)
 
-
+;; essh 
+(require 'essh)                                                    ;;
+(defun essh-sh-hook ()                                             ;;
+  (define-key sh-mode-map "\C-c\C-r" 'pipe-region-to-shell)        ;;
+  (define-key sh-mode-map "\C-c\C-b" 'pipe-buffer-to-shell)        ;;
+  (define-key sh-mode-map "\C-c\C-j" 'pipe-line-to-shell)          ;;
+  (define-key sh-mode-map "\C-c\C-n" 'pipe-line-to-shell-and-step) ;;
+  (define-key sh-mode-map "\C-c\C-f" 'pipe-function-to-shell)      ;;
+  (define-key sh-mode-map "\C-c\C-d" 'shell-cd-current-directory)) ;;
+(add-hook 'sh-mode-hook 'essh-sh-hook)  
 
 ;; ================================
 ;; 窗口管理
@@ -217,6 +235,13 @@
 ;; 比如：
 ;;    S-<up>、S-<right>跳转到上面、右边的窗口
 (windmove-default-keybindings)
+
+;; S-up not work on terminal , so rebind
+;; (global-set-key (kbd "C-c <left>")  'windmove-left)
+;; (global-set-key (kbd "C-c <right>") 'windmove-right)
+;; (global-set-key (kbd "C-c <up>")    'windmove-up)
+;; (global-set-key (kbd "C-c <down>")  'windmove-down)
+
 
 ;; 打开winner-mode
 ;; 可以用C-x <left>和C-x <right>来对窗口布局实现undo/redo
@@ -241,10 +266,12 @@
                        ("<C-left>" . 'winner-undo)
                        ("<C-right>" . 'winner-redo)
                        ;; windows間移動
-                       ("<M-left>" . 'win-prev-window)
-                       ("<M-right>" . 'win-next-window)))
+                       ;; ("<M-left>" . 'win-prev-window)
+                       ;; ("<M-right>" . 'win-next-window)
+											 ))
 
-(define-key global-map (kbd "C-z w") 'windresize)
+(define-key
+ global-map (kbd "C-z w") 'windresize)
 
 ;; end of 窗口管理
 
@@ -254,7 +281,8 @@
 
 
 
-
+;; auto reload updated files
+(global-auto-revert-mode t)
 
 (setq visible-bell t)
 (setq ring-bell-function 'ignore)
@@ -262,8 +290,6 @@
 (setq column-number-mode t) 
 (setq kill-ring-max 200)
 (setq default-fill-column 60)
-(setq-default indent-tabs-mode nil)
-(setq default-tab-width 8)
 (setq scroll-margin 3
       scroll-conservatively 10000)
 (set-scroll-bar-mode nil)
@@ -284,7 +310,7 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 (setq-default tab-width 2)
-(setq-default indent-tabs-mode nil)
+;;(setq-default indent-tabs-mode nil)
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (setq dired-recursive-copies 'top)

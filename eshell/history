@@ -14,3 +14,15 @@ ls
 ls
 cd ..
 mkdir work
+pwd
+ls
+cd workspace/
+ls
+cd test4
+ls
+cd src/
+ls
+ls
+rm comparable 
+ls
+exit

@@ -1,0 +1,6 @@
+# name: hadoop_test
+# key: hadoop_test
+# --
+test ${1:var1}
+$1 > 100
+end \\ $1
