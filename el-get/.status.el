@@ -43,6 +43,9 @@
  (ipython status "installed" recipe
 					(:name ipython :description "Adds support for IPython to python-mode.el" :type http :url "https://raw.github.com/ipython/ipython/master/docs/emacs/ipython.el" :depends python-mode :features ipython :post-init
 								 (setq py-shell-name "ipython")))
+ (js2-mode status "installed" recipe
+					 (:name js2-mode :website "https://github.com/mooz/js2-mode#readme" :description "An improved JavaScript editing mode" :type github :pkgname "mooz/js2-mode" :prepare
+									(autoload 'js2-mode "js2-mode" nil t)))
  (markdown-mode status "installed" recipe
 								(:name markdown-mode :description "Major mode to edit Markdown files in Emacs" :type git :url "git://jblevins.org/git/markdown-mode.git" :before
 											 (add-to-list 'auto-mode-alist
@@ -112,6 +115,11 @@
 																'("\\.scss$" . sass-mode))))
  (smartrep status "installed" recipe
 					 (:name smartrep :description "Support sequential operation which omitted prefix keys." :website "http://sheephead.homelinux.org/2011/12/19/6930/" :type github :pkgname "myuhe/smartrep.el" :features "smartrep"))
+ (textmate-to-yas status "installed" recipe
+									(:name textmate-to-yas :website "https://github.com/mlf176f2/textmate-to-yas.el" :description "Convert Textmate snippets to Yasnippets" :type github :pkgname "mlf176f2/textmate-to-yas.el"))
+ (tomorrow-theme status "installed" recipe
+								 (:name tomorrow-theme :description "Colour Schemes for Hackers" :website "https://github.com/chriskempson/tomorrow-theme" :type github :pkgname "chriskempson/tomorrow-theme" :load-path "GNU Emacs" :minimum-emacs-version 24 :post-init
+												(add-to-list 'custom-theme-load-path default-directory)))
  (unicad status "removed" recipe nil)
  (windresize-extension status "removed" recipe nil)
  (xcscope status "installed" recipe

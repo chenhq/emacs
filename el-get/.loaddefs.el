@@ -158,6 +158,42 @@ Major mode for editing Haml files.
 
 ;;;***
 
+;;;### (autoloads (js2-imenu-extras-mode js2-imenu-extras-setup)
+;;;;;;  "js2-mode/js2-imenu-extras" "js2-mode/js2-imenu-extras.el"
+;;;;;;  (21184 21369))
+;;; Generated autoloads from js2-mode/js2-imenu-extras.el
+
+(autoload 'js2-imenu-extras-setup "js2-mode/js2-imenu-extras" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'js2-imenu-extras-mode "js2-mode/js2-imenu-extras" "\
+Toggle Imenu support for frameworks and structural patterns.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads (js2-mode js2-minor-mode) "js2-mode/js2-mode" "js2-mode/js2-mode.el"
+;;;;;;  (21184 21369))
+;;; Generated autoloads from js2-mode/js2-mode.el
+
+(autoload 'js2-minor-mode "js2-mode/js2-mode" "\
+Minor mode for running js2 as a background linter.
+This allows you to use a different major mode for JavaScript editing,
+such as `espresso-mode', while retaining the asynchronous error/warning
+highlighting features of `js2-mode'.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'js2-mode "js2-mode/js2-mode" "\
+Major mode for editing JavaScript code.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (gfm-mode markdown-mode) "markdown-mode/markdown-mode"
 ;;;;;;  "markdown-mode/markdown-mode.el" (21011 14338))
 ;;; Generated autoloads from markdown-mode/markdown-mode.el
@@ -3138,6 +3174,60 @@ Major mode for editing Sass files.
 
 ;;;***
 
+;;;### (autoloads (yas-text-on-moving-away yas---t/ textmate-import-svn-from-url
+;;;;;;  textmate-import-bundle textmate-import-git-tar\.gz textmate-import-drag-and-drop
+;;;;;;  textmate-yas-submenu textmate-regexp-to-emacs-regexp) "textmate-to-yas/textmate-to-yas"
+;;;;;;  "textmate-to-yas/textmate-to-yas.el" (21125 48538))
+;;; Generated autoloads from textmate-to-yas/textmate-to-yas.el
+
+(autoload 'textmate-regexp-to-emacs-regexp "textmate-to-yas/textmate-to-yas" "\
+* Convert a textmate regular expression to an emacs regular expression (as much as possible)
+
+\(fn REXP)" nil nil)
+
+(autoload 'textmate-yas-submenu "textmate-to-yas/textmate-to-yas" "\
+
+
+\(fn LST SUBMENUS SPACE MODE-NAME)" nil nil)
+
+(autoload 'textmate-import-drag-and-drop "textmate-to-yas/textmate-to-yas" "\
+* Drag and drop interface to import files.
+
+\(fn URI &rest IGNORE)" nil nil)
+
+(defadvice dnd-open-local-file (around textmate-import-drag-and-drop activate) "\
+* Drag Textmate git-hub tar.gz files to import into Yasnippet." (unless (textmate-import-drag-and-drop (ad-get-arg 0)) ad-do-it))
+
+(defadvice dnd-open-file (around textmate-import-drag-and-drop activate) "\
+* Drag Textmate git-hub tar.gz files to import into Yasnippet." (unless (textmate-import-drag-and-drop (ad-get-arg 0)) ad-do-it))
+
+(autoload 'textmate-import-git-tar\.gz "textmate-to-yas/textmate-to-yas" "\
+* Imports a TextMate git-hub bundle.
+
+\(fn FILE PARENT-MODES)" t nil)
+
+(autoload 'textmate-import-bundle "textmate-to-yas/textmate-to-yas" "\
+Imports textmate bundle to new-dir.  Mode may be a string or a function determining which mode to place files in...
+
+\(fn DIR PARENT-MODES &optional ORIGINAL-AUTHOR YAS-DIR MODE TRANSFORM-FUNCTION)" t nil)
+
+(autoload 'textmate-import-svn-from-url "textmate-to-yas/textmate-to-yas" "\
+* Imports a textmate bundle and extracts snippets from `textmate-import-svn-url'
+
+\(fn)" t nil)
+
+(autoload 'yas---t/ "textmate-to-yas/textmate-to-yas" "\
+* Textmate like mirror.  Uses textmate regular expression and textmate formatting.
+
+\(fn TEXTMATE-REG TEXTMATE-REP &optional TEXTMATE-OPTION T-TEXT)" nil nil)
+
+(autoload 'yas-text-on-moving-away "textmate-to-yas/textmate-to-yas" "\
+* Changes text when moving away AND original text has not changed
+
+\(fn DEFAULT-TEXT)" nil nil)
+
+;;;***
+
 ;;;### (autoloads (yaml-mode yaml) "yaml-mode/yaml-mode" "yaml-mode/yaml-mode.el"
 ;;;;;;  (20956 49878))
 ;;; Generated autoloads from yaml-mode/yaml-mode.el
@@ -3155,7 +3245,9 @@ Simple mode to edit YAML.
 
 ;;;***
 
-;;;### (autoloads nil nil ("essh/essh.el") (21079 28793 727428))
+;;;### (autoloads nil nil ("essh/essh.el" "tomorrow-theme/GNU Emacs/tomorrow-day-theme.el"
+;;;;;;  "tomorrow-theme/GNU Emacs/tomorrow-night-blue-theme.el")
+;;;;;;  (21184 21372 471177))
 
 ;;;***
 

@@ -28,12 +28,23 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/auto-complete/")
 (require 'auto-complete-config)
 (ac-config-default)
-(setq ac-auto-show-menu 0.3)
-(auto-complete-mode)
 
+(setq ac-auto-show-menu 0.3)
+
+;; (set-default ac-sources '(ac-source-abbrev
+;;                ac-source-dictionary
+;;                ac-source-yasnippet
+;;                ac-source-words-in-buffer
+;;                ac-source-words-in-same-mode-buffers
+;;                ac-source-semantic))
+
+(auto-complete-mode)
+(global-auto-complete-mode 1)
 (setq ac-modes
       (append ac-modes '(org-mode 
                          text-mode)))
+
+
 
 ;; =============================
 ;; el-get
