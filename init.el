@@ -4,47 +4,6 @@
 (require 'unicad)
 
 
-;; =============================
-;; autocomplete and yasnippet
-;; =============================
-;; yasnippet
-(add-to-list 'load-path
-	                   "~/.emacs.d/plugins/yasnippet")
-(require 'yasnippet)
-(yas-global-mode 1)
-;; To use YASnippet as a non-global minor mode, replace (yas-global-mode 1) 
-;; with (yas-reload-all) to load the snippet tables. Then add a call to 
-;; (yas-minor-mode) to the major-modes where you to enable YASnippet.
-;; (add-hook 'prog-mode-hook
-;;           '(lambda ()
-;;              (yas-minor-mode)))
-
-
-;; auto-complete
-(add-to-list 'load-path
-              "~/.emacs.d/plugins/popup-el")
-(require 'popup)
-
-(add-to-list 'load-path "~/.emacs.d/plugins/auto-complete/")
-(require 'auto-complete-config)
-(ac-config-default)
-
-(setq ac-auto-show-menu 0.3)
-
-;; (set-default ac-sources '(ac-source-abbrev
-;;                ac-source-dictionary
-;;                ac-source-yasnippet
-;;                ac-source-words-in-buffer
-;;                ac-source-words-in-same-mode-buffers
-;;                ac-source-semantic))
-
-(auto-complete-mode)
-(global-auto-complete-mode 1)
-(setq ac-modes
-      (append ac-modes '(org-mode 
-                         text-mode)))
-
-
 
 ;; =============================
 ;; el-get
@@ -93,39 +52,6 @@
 (setq ecb-layout-name 'left3)
 ;; (ecb-activate)
 
-;; =============================
-;; eclim
-;; =============================
-(add-to-list 'load-path "~/.emacs.d/plugins/emacs-eclim/")
-(require 'eclim)
-(setq eclim-auto-save t)
-(global-eclim-mode)
-
-(custom-set-variables
- '(eclim-eclipse-dirs '("/opt/eclipse")))
-(setq eclim-executable "/opt/eclipse/eclim") 
-;;Displaying compilation error messages in the echo area
-
-(setq help-at-pt-display-when-idle t)
-(setq help-at-pt-timer-delay 0.1)
-(help-at-pt-set-timer)
-
-;; Configuring auto-complete-mode
-;; regular auto-complete initialization
-(require 'auto-complete-config)
-(ac-config-default)
-
-;; add the emacs-eclim source
-(require 'ac-emacs-eclim-source)
-(ac-emacs-eclim-config)
-
-;; ;; Configuring company-mode
-;; (require 'company)
-;; (require 'company-emacs-eclim)
-;; (company-emacs-eclim-setup)
-;; (global-company-mode t)
-
-
 
 ;; =============================
 ;; Ruby and Rails
@@ -138,7 +64,7 @@
 
 (require 'haml-mode)
 (require 'yaml-mode)
-(require 'sass-mode)
+(require 'scss-mode)
 (require 'feature-mode)
 (require 'rspec-mode)
 (require 'coffee-mode)
@@ -165,6 +91,100 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
 
+;; scss: fake css for scss mode not work with auto-complete mode
+(add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
+;; =============================
+;; autocomplete and yasnippet
+;; =============================
+;; yasnippet
+(add-to-list 'load-path
+	                   "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+;; To use YASnippet as a non-global minor mode, replace (yas-global-mode 1) 
+;; with (yas-reload-all) to load the snippet tables. Then add a call to 
+;; (yas-minor-mode) to the major-modes where you to enable YASnippet.
+;; (add-hook 'prog-mode-hook
+;;           '(lambda ()
+;;              (yas-minor-mode)))
+
+
+;; auto-complete
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/popup-el")
+(require 'popup)
+
+(add-to-list 'load-path "~/.emacs.d/plugins/auto-complete/")
+
+
+;; modified auto-complete-config 
+(require 'auto-complete-config)
+(ac-config-default)
+
+
+(setq ac-auto-show-menu 0.3)
+
+;; (set-default ac-sources '(ac-source-abbrev
+;;                ac-source-dictionary
+;;                ac-source-yasnippet
+;;                ac-source-words-in-buffer
+;;                ac-source-words-in-same-mode-buffers
+;;                ac-source-semantic))
+
+;; (auto-complete-mode)
+;; (global-auto-complete-mode 1)
+
+;; (setq ac-modes
+;;       (append ac-modes '(org-mode 
+;;                          text-mode
+;; 												 sass-mode)))
+
+;; (add-to-list 'ac-modes 'sass-mode)
+
+;; (add-hook 'css-mode-hook 'rainbow-mode)
+
+;; (dolist (mode '(magit-log-edit-mode log-edit-mode org-mode text-mode haml-mode
+;; 																		sass-mode scss-mode yaml-mode csv-mode espresso-mode haskell-mode
+;; 																		html-mode nxml-mode sh-mode smarty-mode clojure-mode
+;; 																		lisp-mode textile-mode markdown-mode tuareg-mode
+;; 																		js-mode js2-mode js3-mode css-mode less-css-mode))
+;; 	(add-to-list 'ac-modes mode))
+
+;; =============================
+;; eclim
+;; =============================
+(add-to-list 'load-path "~/.emacs.d/plugins/emacs-eclim/")
+(require 'eclim)
+(setq eclim-auto-save t)
+(global-eclim-mode)
+
+(custom-set-variables
+ '(eclim-eclipse-dirs '("/opt/eclipse")))
+(setq eclim-executable "/opt/eclipse/eclim") 
+;;Displaying compilation error messages in the echo area
+
+(setq help-at-pt-display-when-idle t)
+(setq help-at-pt-timer-delay 0.1)
+(help-at-pt-set-timer)
+
+;; ;; Configuring auto-complete-mode
+;; ;; regular auto-complete initialization
+;; (require 'auto-complete-config)
+;; (ac-config-default)
+
+;; add the emacs-eclim source
+(require 'ac-emacs-eclim-source)
+(ac-emacs-eclim-config)
+
+;; ;; Configuring company-mode
+;; (require 'company)
+;; (require 'company-emacs-eclim)
+;; (company-emacs-eclim-setup)
+;; (global-company-mode t)
+
+
+
+;; color theme
 (require 'color-theme)
 (color-theme-railscasts)
 

@@ -28,6 +28,8 @@
 			(:name ecb :description "Emacs Code Browser" :type cvs :module "ecb" :url ":pserver:anonymous@ecb.cvs.sourceforge.net:/cvsroot/ecb" :build
 						 `(("make" "CEDET=" ,(concat "EMACS="
 																				 (shell-quote-argument el-get-emacs))))))
+ (ediff+ status "installed" recipe
+				 (:name ediff+ :auto-generated t :type emacswiki :description "Enhancements to Ediff" :website "https://raw.github.com/emacsmirror/emacswiki.org/master/ediff+.el"))
  (el-get status "installed" recipe
 				 (:name el-get :website "https://github.com/dimitri/el-get#readme" :description "Manage the external elisp bits and pieces you depend upon." :type github :branch "4.stable" :pkgname "dimitri/el-get" :features el-get :info "." :load "el-get.el"))
  (ess status "removed" recipe nil)
@@ -113,6 +115,8 @@
 						(:name sass-mode :description "Major mode for editing Sass files" :type github :pkgname "nex3/sass-mode" :depends haml-mode :post-init
 									 (add-to-list 'auto-mode-alist
 																'("\\.scss$" . sass-mode))))
+ (scss-mode status "installed" recipe
+						(:name scss-mode :description "Major mode for editing SCSS files(http://sass-lang.com)" :type github :pkgname "antonj/scss-mode" :features scss-mode))
  (smartrep status "installed" recipe
 					 (:name smartrep :description "Support sequential operation which omitted prefix keys." :website "http://sheephead.homelinux.org/2011/12/19/6930/" :type github :pkgname "myuhe/smartrep.el" :features "smartrep"))
  (textmate-to-yas status "installed" recipe

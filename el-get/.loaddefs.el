@@ -81,6 +81,19 @@ A major mode for controlling multiple terms at once.
 
 ;;;***
 
+;;;### (autoloads (ediff-toggle-ignore-case) "ediff+/ediff+" "ediff+/ediff+.el"
+;;;;;;  (21262 52771))
+;;; Generated autoloads from ediff+/ediff+.el
+
+(autoload 'ediff-toggle-ignore-case "ediff+/ediff+" "\
+
+
+\(fn)" t nil)
+
+(when (< emacs-major-version 22) (defun ediff-help-for-quick-help nil "Explain Ediff commands in more detail." (interactive) (ediff-barf-if-not-control-buffer) (let ((pos (ediff-event-point last-command-event)) overl cmd) (if ediff-xemacs-p (setq overl (extent-at pos (current-buffer) 'ediff-help-info) cmd (ediff-overlay-get overl 'ediff-help-info)) (setq cmd (car (mapcar #'(lambda (elt) (overlay-get elt 'ediff-help-info)) (overlays-at pos))))) (if (not (stringp cmd)) (error "Hmm... I don't see an Ediff command around here...")) (ediff-documentation "Quick Help Commands") (let ((case-fold-search nil)) (cond ((string= cmd "?") (re-search-forward "^`\\?'")) ((string= cmd "G") (re-search-forward "^`G'")) ((string= cmd "E") (re-search-forward "^`E'")) ((string= cmd "wd") (re-search-forward "^`wd'")) ((string= cmd "wx") (re-search-forward "^`wa'")) ((string= cmd "a/b") (re-search-forward "^`a'")) ((string= cmd "x") (re-search-forward "^`a'")) ((string= cmd "xy") (re-search-forward "^`ab'")) ((string= cmd "p,DEL") (re-search-forward "^`p'")) ((string= cmd "n,SPC") (re-search-forward "^`n'")) ((string= cmd "j") (re-search-forward "^`j'")) ((string= cmd "gx") (re-search-forward "^`ga'")) ((string= cmd "!") (re-search-forward "^`!'")) ((string= cmd "*") (re-search-forward "^`\\*'")) ((string= cmd "m") (re-search-forward "^`m'")) ((string= cmd "|") (re-search-forward "^`|'")) ((string= cmd "@") (re-search-forward "^`@'")) ((string= cmd "h") (re-search-forward "^`h'")) ((string= cmd "r") (re-search-forward "^`r'")) ((string= cmd "rx") (re-search-forward "^`ra'")) ((string= cmd "##") (re-search-forward "^`##'")) ((string= cmd "#c") (re-search-forward "^`#c'")) ((string= cmd "#f/#h") (re-search-forward "^`#f'")) ((string= cmd "X") (re-search-forward "^`A'")) ((string= cmd "v/V") (re-search-forward "^`v'")) ((string= cmd "</>") (re-search-forward "^`<'")) ((string= cmd "~") (re-search-forward "^`~'")) ((string= cmd "i") (re-search-forward "^`i'")) ((string= cmd "D") (re-search-forward "^`D'")) ((string= cmd "R") (re-search-forward "^`R'")) ((string= cmd "M") (re-search-forward "^`M'")) ((string= cmd "z/q") (re-search-forward "^`z'")) ((string= cmd "%") (re-search-forward "^`%'")) ((string= cmd "C-l") (re-search-forward "^`C-l'")) ((and (> emacs-major-version 20) (string= cmd "$$")) (re-search-forward "^`\\$\\$'")) ((and (> emacs-major-version 20) (string= cmd "$*")) (re-search-forward "^`\\$\\*'")) ((and (< emacs-major-version 21) (string= cmd "$")) (re-search-forward "^`\\$'")) ((string= cmd "/") (re-search-forward "^`/'")) ((string= cmd "&") (re-search-forward "^`&'")) ((string= cmd "s") (re-search-forward "^`s'")) ((string= cmd "+") (re-search-forward "^`\\+'")) ((string= cmd "=") (re-search-forward "^`='")) (t (error "Undocumented command! Type `G' in Ediff Control Panel to drop a note to the Ediff maintainer")))))))
+
+;;;***
+
 ;;;### (autoloads (el-get-checksum el-get-make-recipes el-get-cd
 ;;;;;;  el-get-self-update el-get-update-all el-get-version) "el-get/el-get"
 ;;;;;;  "el-get/el-get.el" (20956 49878))
@@ -3162,15 +3175,32 @@ switch the current ruby version to any ruby, which is installed with rvm
 ;;;***
 
 ;;;### (autoloads (sass-mode) "sass-mode/sass-mode" "sass-mode/sass-mode.el"
-;;;;;;  (20956 49879))
+;;;;;;  (21267 10113))
 ;;; Generated autoloads from sass-mode/sass-mode.el
 
 (autoload 'sass-mode "sass-mode/sass-mode" "\
 Major mode for editing Sass files.
 
+\\{sass-mode-map}
+
 \(fn)" t nil)
 
-(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
+(add-to-list 'auto-mode-alist '("\\.sass\\'" . sass-mode))
+
+;;;***
+
+;;;### (autoloads (scss-mode) "scss-mode/scss-mode" "scss-mode/scss-mode.el"
+;;;;;;  (21188 12358))
+;;; Generated autoloads from scss-mode/scss-mode.el
+
+(autoload 'scss-mode "scss-mode/scss-mode" "\
+Major mode for editing SCSS files, http://sass-lang.com/
+Special commands:
+\\{scss-mode-map}
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
 
 ;;;***
 
@@ -3247,7 +3277,7 @@ Simple mode to edit YAML.
 
 ;;;### (autoloads nil nil ("essh/essh.el" "tomorrow-theme/GNU Emacs/tomorrow-day-theme.el"
 ;;;;;;  "tomorrow-theme/GNU Emacs/tomorrow-night-blue-theme.el")
-;;;;;;  (21184 21372 471177))
+;;;;;;  (21267 10115 288350))
 
 ;;;***
 
