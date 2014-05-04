@@ -4,6 +4,14 @@
 (require 'unicad)
 
 
+;; ELPA
+;; Emacs Lisp Package Archive
+;;
+(require 'package)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+(package-initialize)
 
 ;; =============================
 ;; el-get
@@ -20,6 +28,26 @@
 
 (el-get 'sync)
 
+
+
+;;==========================
+;; SCALA
+;;==========================
+
+(unless (package-installed-p 'scala-mode2)
+  (package-refresh-contents) (package-install 'scala-mode2))
+
+;; load the ensime lisp code...
+;; (add-to-list 'load-path "ENSIME_ROOT/src/main/elisp/")
+(require 'ensime)
+
+;; This step causes the ensime-mode to be started whenever
+;; scala-mode is started for a buffer. You may have to customize this step
+;; if you're not using the standard scala mode.
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+
+;; Add the following to your ~/.sbt/plugins/plugins.sbt or YOUR_PROJECT/project/plugins.sbt:
+;; addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.1.2")
 
 ;; =====================
 ;; markdown
@@ -124,11 +152,14 @@
 
 (setq ac-auto-show-menu 0.3)
 
-;; (set-default ac-sources '(ac-source-abbrev
+;; (set-default 'ac-sources '(ac-source-abbrev
 ;;                ac-source-dictionary
 ;;                ac-source-yasnippet
 ;;                ac-source-words-in-buffer
 ;;                ac-source-words-in-same-mode-buffers
+;; 							 ac-source-ensime-package-decl-members
+;; 							 ac-source-ensime-scope-names
+;; 							 ac-source-ensime-members
 ;;                ac-source-semantic))
 
 ;; (auto-complete-mode)
@@ -498,3 +529,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'upcase-region 'disabled nil)
